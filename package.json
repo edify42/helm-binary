@@ -1,0 +1,24 @@
+{
+  "name": "helm-binary-test",
+  "version": "3.2.4",
+  "description": "install helm binary to you node_modules",
+  "bin": {
+    "helm": "bin/helm"
+  },
+  "files": [
+    "bin/helm"
+  ],
+  "scripts": {
+    "lint-markdown": "yarn run markdownlint README.md"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/edify42/helm-binary"
+  },
+  "author": "ekim8015@gmail.com",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "markdownlint-cli": "^0.23.2"
+  }
+}
