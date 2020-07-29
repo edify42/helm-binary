@@ -1,6 +1,6 @@
 {
   "name": "helm-binary-test",
-  "version": "3.2.4-test",
+  "version": "3.2.4-test-2",
   "description": "install helm binary to you node_modules",
   "bin": {
     "helm": "bin/helm"
