@@ -13,7 +13,6 @@
     "publish": "yarn publish",
     "postinstall": "rm bin/helm && echo 'creating symlink for helm' && ln -s ../node_modules/helm-binary-linux/bin/helm bin/helm || ln -s ../node_modules/helm-binary-darwin/bin/helm bin/helm"
   },
-  "os" : [ "linux" ],
   "repository": {
     "type": "git",
     "url": "https://github.com/edify42/helm-binary"
