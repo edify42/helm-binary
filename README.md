@@ -9,11 +9,10 @@ Install helm via npm/yarn. This is a wrapper around the projects here:
 Taking the latest helm 3 binary at the time of writing (3.2.4) as an example:
 
 ```bash
-
-npm install -g helm-binary@3.2.4
-
 yarn global add helm-binary@3.2.4
 ```
+
+Note: Doesn't like to symlink with both npm and yarn sadly
 
 ## Package specific install
 
