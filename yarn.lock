@@ -81,6 +81,11 @@ glob@~7.1.2:
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
   integrity sha1-TK+tdrxi8C+gObL5Tpo906ORpyU=
 
+helm-binary-linux@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/helm-binary-linux/-/helm-binary-linux-3.2.4.tgz#aa3b3d2457e6e78ac21fd221534aca22ca1c1de6"
+  integrity sha512-co1ea/VSAWTeQNCCfmae79S2S7LKK+kGp5VYCRdu8gEtmj66j8qjHdxI4LRZyLKTjZZ63fXylju30gun8dTEiQ==
+
 ignore@~5.1.4:
   version "5.1.8"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"

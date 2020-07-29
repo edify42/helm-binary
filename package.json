@@ -1,29 +1,31 @@
 {
-  "name": "helm-binary-linux",
-  "version": "3.2.4",
+  "name": "helm-binary-test",
+  "version": "3.2.4-test",
   "description": "install helm binary to you node_modules",
   "bin": {
     "helm": "bin/helm"
   },
-  "files": [
-    "bin/helm"
-  ],
   "scripts": {
     "clean": "rm -rf bin && mkdir bin",
     "destroy": "yarn run clean && rm -rf node_modules",
     "lint-markdown": "yarn run markdownlint README.md",
     "make": ".ci/get-helm.sh latest",
-    "publish": "yarn publish"
+    "publish": "yarn publish",
+    "postinstall": "rm bin/helm && echo 'creating symlink for helm' && ln -s ../node_modules/helm-binary-linux/bin/helm bin/helm || ln -s ../node_modules/helm-binary-darwin/bin/helm bin/helm"
   },
   "os" : [ "linux" ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/edify42/helm-binary-linux"
+    "type": "git",
+    "url": "https://github.com/edify42/helm-binary"
   },
   "author": "ekim8015@gmail.com",
   "license": "MIT",
   "private": false,
   "devDependencies": {
     "markdownlint-cli": "^0.23.2"
+  },
+  "optionalDependencies": {
+    "helm-binary-linux": "^3.2.4",
+    "helm-binary-darwin": "^3.2.4"
   }
 }
