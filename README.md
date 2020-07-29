@@ -26,6 +26,11 @@ You've setup your `$PATH` correctly to have node binaries executable.
 e.g. My Ubuntu machine has: `/home/edify42/.nvm/versions/node/v10.16.0/bin`
 in my `$PATH`
 
+## How it works
+
+It installs the optionalDependency based on your `platform` (darwin/linux) and
+then the postInstall script simply creates a hard link to the binary.
+
 ## Automation
 
 Github Actions support scheduled builds. Lets run one periodically to check
