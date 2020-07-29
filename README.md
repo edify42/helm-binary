@@ -4,13 +4,35 @@ Install helm via npm/yarn. This is a wrapper around the projects here:
 [helm-binary-darwin](https://github.com/edify42/helm-binary-darwin)
 [helm-binary-linux](https://github.com/edify42/helm-binary-linux)
 
-## Supported distributions
+## Global install
 
-* OSX (Darwin)
-* Linux
+Taking the latest helm 3 binary at the time of writing (3.2.4) as an example:
 
-Versioned as per helm release.
+```bash
+
+npm install -g helm-binary@3.2.4
+
+yarn global add helm-binary@3.2.4
+```
+
+## Package specific install
+
+Add this package as a dependency and you can run `helm` from within your node
+runtime (through say, the `exec` package)
+
+## Requirements
+
+You've setup your `$PATH` correctly to have node binaries executable.
+e.g. My Ubuntu machine has: `/home/edify42/.nvm/versions/node/v10.16.0/bin`
+in my `$PATH`
 
 ## Automation
 
-Stil a WIP
+Github Actions support scheduled builds. Lets run one periodically to check
+the github releases API and package new versions of helm automagically for
+future use.
+
+## Hack innit
+
+Is this a hack? Yes. I need to have `helm` available and this is a nice way of
+achieving it for some of the Javascript/Node tooling I currently work with.
