@@ -1,17 +1,20 @@
 {
   "name": "helm-binary",
-  "version": "3.2.4-release2",
+  "version": "3.2.4-release3",
   "description": "install helm binary to you node_modules",
   "bin": {
     "helm": "bin/helm"
   },
+  "files": [
+    "lib",
+    "bin"
+  ],
   "scripts": {
-    "clean": "rm -rf bin && mkdir bin",
+    "clean": "rm -f bin/helm && touch bin/helm",
     "destroy": "yarn run clean && rm -rf node_modules",
+    "debug": "lib/postinstall.sh",
     "lint-markdown": "yarn run markdownlint README.md",
-    "make": ".ci/get-helm.sh latest",
-    "publish": "yarn publish",
-    "postinstall": "rm bin/helm && echo 'creating a hard link for helm' && ln ../helm-binary-linux/bin/helm bin/helm || ln ../helm-binary-darwin/bin/helm bin/helm"
+    "postinstall": "$npm_execpath run debug"
   },
   "repository": {
     "type": "git",
