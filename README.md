@@ -1,6 +1,6 @@
 # helm-binary
 
-Install helm via yarn. This is a wrapper around the projects here:
+Install helm via yarn/npm. This is a wrapper around the projects here:
 [helm-binary-darwin](https://github.com/edify42/helm-binary-darwin)
 [helm-binary-linux](https://github.com/edify42/helm-binary-linux)
 
@@ -12,7 +12,17 @@ Taking the latest helm 3 binary at the time of writing (3.2.4) as an example:
 yarn global add helm-binary@latest
 ```
 
-Note: Doesn't like to symlink with both npm and yarn sadly - **npm isn't supported**
+npm _should_ also work but I have seen places it can fail more ofter (like when
+running as the root user on a linux box).
+
+```bash
+npm install --global helm-binary@latest
+```
+
+## Installation dependencies
+
+Whatever linux/mac machine you run this on, make sure it has `bash` available
+as the postinstall script depends on that (`#!/bin/sh` isn't enough)
 
 ## Package specific install
 
