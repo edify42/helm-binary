@@ -1,6 +1,6 @@
-# helm-binary-linux
+# helm-binary
 
-Install helm via npm/yarn. This is a wrapper around the projects here:
+Install helm via yarn. This is a wrapper around the projects here:
 [helm-binary-darwin](https://github.com/edify42/helm-binary-darwin)
 [helm-binary-linux](https://github.com/edify42/helm-binary-linux)
 
@@ -9,15 +9,25 @@ Install helm via npm/yarn. This is a wrapper around the projects here:
 Taking the latest helm 3 binary at the time of writing (3.2.4) as an example:
 
 ```bash
-yarn global add helm-binary@3.2.4
+yarn global add helm-binary@latest
 ```
 
-Note: Doesn't like to symlink with both npm and yarn sadly
+Note: Doesn't like to symlink with both npm and yarn sadly - **npm isn't supported**
 
 ## Package specific install
 
 Add this package as a dependency and you can run `helm` from within your node
-runtime (through say, the `exec` package)
+runtime when using the `scripts` block of the package.json file.
+
+Alternatively, appending the `node_modules/.bin` location when calling this
+from within your source code (through say, the `exec` package), e.g.
+
+```javascript
+const helm = Path.resolve(__dirname, '../../node_modules/.bin/helm');
+```
+
+You are able to directly call `helm` within your source code without needing it
+to be installed on the running system.
 
 ## Requirements
 
