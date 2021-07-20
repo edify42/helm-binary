@@ -1,6 +1,6 @@
 {
   "name": "helm-binary",
-  "version": "3.6.2",
+  "version": "3.6.3",
   "description": "install helm binary to you node_modules",
   "bin": {
     "helm": "bin/helm"
