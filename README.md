@@ -6,7 +6,7 @@ Install helm via yarn/npm. This is a wrapper around the projects here:
 
 ## Global install
 
-Taking the latest helm 3 binary at the time of writing (3.2.4) as an example:
+Taking the latest helm 3 binary at the time of writing (3.6.2) as an example:
 
 ```bash
 yarn global add helm-binary@latest
