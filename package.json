@@ -1,6 +1,6 @@
 {
   "name": "helm-binary",
-  "version": "3.2.4-release3",
+  "version": "3.6.2",
   "description": "install helm binary to you node_modules",
   "bin": {
     "helm": "bin/helm"
@@ -27,7 +27,7 @@
     "markdownlint-cli": "^0.23.2"
   },
   "optionalDependencies": {
-    "helm-binary-darwin": "^3.2.4",
-    "helm-binary-linux": "^3.2.4"
+    "helm-binary-darwin": "3.6.2",
+    "helm-binary-linux": "3.6.2"
   }
 }
