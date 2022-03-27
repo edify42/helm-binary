@@ -86,7 +86,7 @@ helm-binary-darwin@3.6.2:
   resolved "https://registry.yarnpkg.com/helm-binary-darwin/-/helm-binary-darwin-3.6.2.tgz#9a2fefd4d64a19fdfb4a7c03f5b300b5ed442c4d"
   integrity sha512-zYfiEPJ55I1kT8k5XvtEmaVJ82ZFslhXRgdTDV4Tjy08PpQIk5T4HalhX0i3s5fXBmc9P/1j1i8dHeZVIKVuWQ==
 
-helm-binary-linux@^3.6.2:
+helm-binary-linux@3.6.2:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/helm-binary-linux/-/helm-binary-linux-3.6.2.tgz#1791cc485319691ed1e87b7dd251a4f8bd2cad32"
   integrity sha512-ZzR0bIps1qfh5ZCmb8dcxivDMArbfWWifuJyNAsOL26w8P/EKP2xNT/FE0o2FNx8JiDxh0CpQM0gd5fawO+HOQ==
@@ -200,9 +200,9 @@ minimatch@^3.0.4, minimatch@~3.0.4:
     brace-expansion "^1.1.7"
 
 minimist@^1.2.0, minimist@~1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
-  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
+  integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
 once@^1.3.0:
   version "1.4.0"
